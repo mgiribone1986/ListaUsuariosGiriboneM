@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ListaUsuariosGiribone'`, () => {
+  it(`should have as title 'clase-04-no-standalone'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ListaUsuariosGiribone');
+    expect(app.title).toEqual('clase-04-no-standalone');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ListaUsuariosGiribone');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, clase-04-no-standalone');
   });
 });
